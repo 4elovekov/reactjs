@@ -1,10 +1,10 @@
 import React from 'react';
 import cl from './Loader.module.css';
 
-const Loader = () => {
+const Loader = (marginTop="50") => {
     return (
-        <div className={cl.loader}>
-
+        <div style={{display:"flex", justifyContent:"center", marginTop:`${marginTop}px`}}>
+            <div className={cl.loader}></div>
         </div>
     );
 };

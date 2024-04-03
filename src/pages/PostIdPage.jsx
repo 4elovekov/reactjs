@@ -27,7 +27,7 @@ const PostIdPage = () => {
         <div style={{display:"flex", flexDirection:"column", alignItems:"center", maxWidth:"80vw"}}>
             <h1 style={{marginTop:"20px"}}>Вы открыли страницу поста с ID = {params.id}</h1>
             {isLoading && isComLoading
-                ?   <div style={{display:"flex", justifyContent:"center", marginTop:"50px"}}><Loader/></div>
+                ?   <Loader/>
                 :   <>
                         {error
                             ?   <h2 style={{marginTop:"20px"}}>Произошла ошибка при загрузке поста</h2>

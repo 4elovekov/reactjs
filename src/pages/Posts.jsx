@@ -70,7 +70,7 @@ function Posts() {
                 <h1>Произошла ошибка ${postError}</h1>
             }
             {isPostsLoading
-                ? <div style={{display:"flex", justifyContent:"center", marginTop:"50px"}} ><Loader/></div>
+                ? <Loader/>
                 : <PostList remove={removePost} posts={sortedAndSearchedPosts} title="Посты про JS"/>
             }
             <Pagination
