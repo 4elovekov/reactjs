@@ -14,9 +14,11 @@
     "react-transition-group": "^4.4.5",
     "web-vitals": "^2.1.4"
   },
+  "homepage": "https://4elovekov.github.io/reactjs/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -39,6 +41,7 @@
     ]
   },
   "devDependencies": {
-    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "gh-pages": "^6.1.1"
   }
 }
