@@ -1,9 +1,17 @@
 .loader {
+  position: fixed;
+  z-index: 10;
+  top: calc(50vh - 100px);
+  left: calc(50vw - 100px);
   width: 200px;
   height: 200px;
   border-radius: 50%;
   border: 10px dashed teal;
   animation: rotate 1s infinite linear;
+/*  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;*/
 }
 
 @keyframes rotate {
