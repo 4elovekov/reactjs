@@ -1,4 +1,4 @@
-import React, {useEffect, useMemo, useRef, useState} from "react";
+import React, {useEffect, useRef, useState} from "react";
 import "../styles/App.css";
 import PostList from "../components/PostList";
 import MyButton from "../components/UI/button/MyButton";
