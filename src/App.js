@@ -1,9 +1,6 @@
 import React, {useEffect, useState} from "react";
 import "./styles/App.css";
-import {BrowserRouter, Route, Routes} from "react-router-dom";
-import About from "./pages/About";
-import Posts from "./pages/Posts";
-import Error from "./pages/Error";
+import {BrowserRouter} from "react-router-dom";
 import Navbar from "./components/UI/Navbar/Navbar";
 import {AuthContext} from "./context";
 import AppRouter from "./components/AppRouter";
