@@ -1,6 +1,6 @@
 import React, {useContext} from 'react';
-import {Redirect, Route, Routes, Switch} from "react-router-dom";
-import {privateRoutes, publicRoutes} from "../router";
+import {Route, Routes} from "react-router-dom";
+import {privateRoutes, publicRoutes} from "../router/router";
 import {AuthContext} from "../context";
 import Loader from "./UI/Loader/Loader";
 import Posts from "../pages/Posts";
@@ -18,10 +18,18 @@ const AppRouter = () => {
 
     return (
         <Routes>
+            {privateRoutes.map((route, index) =>
+                <Route
+                    key={index}
+                    path={route.path}
+                    element={<route.element />}
+                />
+            )}
+{/*            <Route path="" element={<Posts />}/>
             <Route path="posts" element={<Posts />}/>
             <Route path="posts/:id" element={<PostIdPage />}/>
             <Route path="about" element={<About />}/>
-            <Route path="*" element={<Error />}/>
+            <Route path="*" element={<Error />}/>*/}
         </Routes>
     );
 };
