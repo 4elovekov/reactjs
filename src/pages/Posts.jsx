@@ -10,7 +10,7 @@ import Loader from "../components/UI/Loader/Loader"
 import { useFetching } from "../hooks/useFetching";
 import PostService from "../API/PostService";
 import { getPageCount } from "../utils/pages";
-import Pagination from "../components/UI/pagination/Pagination";
+//import Pagination from "../components/UI/pagination/Pagination";
 import {useObserver} from "../hooks/useObserver";
 
 function Posts() {
@@ -50,9 +50,9 @@ function Posts() {
         setPosts(posts.filter(p => p.id !== post.id))
     }
 
-    const changePage = (page) => {
+/*    const changePage = (page) => {
         setPage(page)
-    }
+    }*/
 
     return (
         <div className="App">
