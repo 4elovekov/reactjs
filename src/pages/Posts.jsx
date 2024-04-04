@@ -71,7 +71,7 @@ function Posts() {
                 <h1>Произошла ошибка ${postError}</h1>
             }
             <PostList remove={removePost} posts={sortedAndSearchedPosts} title="Посты про JS"/>
-            <div hidden={true} ref={lastElement} style={{height:"20px", display:"none"}} />
+            <div ref={lastElement} style={{height:"40px"}} />
             {isPostsLoading &&
                 <Loader/>
             }
