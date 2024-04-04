@@ -21,6 +21,7 @@ const PostIdPage = () => {
     useEffect(() => {
         fetchPostById(params.id)
         fetchComments(params.id)
+        // eslint-disable-next-line
     }, []);
 
     return (

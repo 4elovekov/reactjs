@@ -19,6 +19,7 @@ function Posts() {
     const [filter, setFilter] = useState({sort: "", query: "", defaultSort: "id"})
     const [modal, setModal] = useState(false)
     const [totalPages, setTotalPages] = useState(0)
+    // eslint-disable-next-line
     const [limit, setLimit] = useState(3)
     const [page, setPage] = useState(1)
     const sortedAndSearchedPosts = usePosts(posts, filter.sort, filter.query, filter.defaultSort)
@@ -37,6 +38,7 @@ function Posts() {
 
     useEffect(() => {
         fetchPosts(limit, page);
+        // eslint-disable-next-line
     }, [page]);
 
     const createPost = (newPost) => {
