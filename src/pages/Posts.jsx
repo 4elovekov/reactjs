@@ -71,15 +71,15 @@ function Posts() {
                 <h1>Произошла ошибка ${postError}</h1>
             }
             <PostList remove={removePost} posts={sortedAndSearchedPosts} title="Посты про JS"/>
-            <div ref={lastElement} style={{height:"20px", background:"red"}} />
+            <div hidden={true} ref={lastElement} style={{height:"20px", display:"none"}} />
             {isPostsLoading &&
                 <Loader/>
             }
-            <Pagination
+{/*            <Pagination
                 totalPages={totalPages}
                 page={page}
                 changePage={changePage}
-            />
+            />*/}
         </div>
     );
 }
