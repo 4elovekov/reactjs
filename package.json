@@ -14,7 +14,7 @@
     "react-transition-group": "^4.4.5",
     "web-vitals": "^2.1.4"
   },
-  "homepage": "https://4elovekov.github.io/reactjs/",
+  "homepage": "/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
