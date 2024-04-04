@@ -11,7 +11,7 @@
 }
 
 .App {
-    width: 800px;
+    max-width: 80vw;
 }
 
 .post {
@@ -64,10 +64,30 @@
     width: 100vw;
     display: flex;
     align-items: center;
-    padding: 0 15px;
+    padding: 0;
     background: lightgray;
+    border-bottom: 2px solid teal;
+    border-top: 2px solid teal;
+
+}
+
+.navbar__container {
+    max-width: 80vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
 }
 
 .navbar__links {
-    margin-left: auto;
+    max-width: 25vw;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar__links a {
+    text-decoration: none;
+    color: teal;
+    border: 1px solid teal;
+    padding: 5px 15px;
 }
